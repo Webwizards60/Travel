@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+// Font and typography
+$main-font: 'Roboto', sans-serif;
+$extra-bold: 900;
+$bold: 700;
+$medium: 500;
+$light: 400;
+$extra-light: 300;
+$font-extra-large: 8rem;
+$font-large: 6rem;
+$font-medium: 4rem;
+$font-small: 1.5rem;
+$font-extra-small: 1rem;
+
+// colors
+$background-light: #fff;
+$main-color: rgb(0, 47, 90);
+$text-light: #fff;
+$text-dark: rgb(53, 53, 53);
+$text-extra-light: rgb(105, 105, 105);
+
+*{
+    margin: 0;
+    padding: 0;
+}
