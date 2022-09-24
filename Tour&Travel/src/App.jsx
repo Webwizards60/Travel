@@ -1,12 +1,27 @@
-import React from 'react'
-import Login from './assets/components/login'
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Overview from "./components/overview";
+import TopNav from "./components/topNav";
+import SideNav from "./components/sideNav";
+import Home from './components/home'
+import Place from './components/place';
+import Image from "./components/images";
 
 const App = () => {
   return (
-    <div>
-      <Login/>
-    </div>
-  )
-}
+    <>
+      <Router>
+        <TopNav />
+        <SideNav />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Overview />} />
+          <Route path="/add-places" element={<Place />} />
+          <Route path="/add-images" element={<Image />} />
+        </Routes>
+      </Router>
+    </>
+  );
+};
 
-export default App
+export default App;

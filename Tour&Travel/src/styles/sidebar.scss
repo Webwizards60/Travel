@@ -1,0 +1,54 @@
+@import "./variables.scss";
+
+.sideBar {
+  font-family: $main-font;
+  padding: 1rem;
+  width: 15vw;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  border-right: 1px solid rgb(201, 201, 201);
+  height: 100vh;
+  position: fixed;
+  border-radius: 20px;
+  box-shadow: 15px 0 30px rgba(224, 224, 224, 0.548);
+  z-index: 10;
+
+  & .title {
+    font-size: $font-small;
+    font-weight: bolder;
+  }
+
+  & .nav-list {
+    margin-top: 3rem;
+
+    & ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-left: 0.5rem;
+      font-weight: 400;
+      font-size: $font-small;
+
+      & li {
+        padding: 0.75rem;
+        transition: 0.2s ease all;
+
+        & .navLink {
+          text-decoration: none;
+        }
+
+        &:hover {
+          background-color: rgb(255, 255, 255);
+          box-shadow: 0 15px 30px rgb(201, 201, 201);
+          border-radius: 15px;
+        }
+      }
+
+      & a {
+        cursor: pointer;
+        color: rgb(32, 32, 32);
+      }
+    }
+  }
+}

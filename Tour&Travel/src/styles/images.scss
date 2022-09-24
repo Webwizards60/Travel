@@ -1,0 +1,50 @@
+@import "./variables.scss";
+
+.title {
+  font-size: $font-small;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.inputSearch {
+  border: none;
+  box-shadow: 0 15px 30px #999;
+  font-size: $font-small;
+  height: 25px;
+  width: 450px;
+  border-radius: 15px;
+  padding: 0.5rem;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.uploadSec {
+  display: flex;
+  margin-top: 1rem;
+  align-items: center;
+  justify-content: space-between;
+
+  & .button1 {
+    font-family: $main-font;
+    padding: 0.75rem 1rem;
+    background-color: #0aa1dd;
+    margin-right: 3rem;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px #0aa1dd7e;
+  }
+}
+
+
+.search{
+    & i{
+        margin-left: 1rem;
+        background-color: #0aa1dd;
+        padding: .5rem;
+        border-radius: 50%;
+        color: #fff;
+    }
+}
