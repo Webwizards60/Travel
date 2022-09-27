@@ -6,6 +6,7 @@ import SideNav from "./components/sideNav";
 import Home from './components/home'
 import Place from './components/place';
 import Image from "./components/images";
+import Users from './components/users'
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <Route path="/home" element={<Overview />} />
           <Route path="/add-places" element={<Place />} />
           <Route path="/add-images" element={<Image />} />
+          <Route path="/add-users" element={<Users />} />
         </Routes>
       </Router>
     </>

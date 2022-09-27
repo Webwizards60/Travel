@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/images.scss";
+import "../styles/users.scss";
 import { DataGrid } from "@mui/x-data-grid";
 
 const columns = [
@@ -35,29 +35,19 @@ const rows = [
   { id: 9, lastName: "Roxie", firstName: "Harvey", age: 65 },
 ];
 
-const images = () => {
+const users = () => {
   return (
     <div className="main">
-      <div className="intro">
-        <div className="title">Add Images</div>
-        <p className="paragraph">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores,
-          quia.
-        </p>
+      <div className="heading">
+        <span className="head">Management of Users & Multiple Admins</span>
+        <span className="inf">
+          Here the Super Admin can acess all the Users and Admins
+        </span>
       </div>
-      <div className="uploadSec">
-        <div className="search">
-          <input type="text" className="inputSearch" />
-          <i class="uil uil-search"></i>
-        </div>
-        <div className="button1">
-          <span>Upload files</span>
-        </div>
+      <div className="btn">
+        <span className="buttonUser">Add Multiple Users</span>
       </div>
-      <div className="imageList">
-        <div className="list"></div>
-      </div>
-      <div style={{ height: 400, width: "90%", marginTop: '2rem' }}>
+      <div style={{ height: 400, width: "90%", marginTop: "2rem" }}>
         <DataGrid
           rows={rows}
           columns={columns}
@@ -70,4 +60,4 @@ const images = () => {
   );
 };
 
-export default images;
+export default users;

@@ -33,7 +33,7 @@ const sideNav = () => {
             </Link>
           </li>
           <li className="navItem">
-            <Link className="navLink" to={"/users"}>
+            <Link className="navLink" to={"/add-users"}>
               <i class="uil uil-user"></i> Users
             </Link>
           </li>
