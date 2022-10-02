@@ -1,0 +1,39 @@
+@import './variables.scss';
+
+.head-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 2.5rem;
+}
+
+.dropdown{
+    background-color: #0AA1DD;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    box-shadow: 0 10px 20px #0aa1dd5e;
+    cursor: pointer;
+
+    & .drop{
+        color: #fff;
+        font-weight: 500;
+    }
+}
+
+.bar_graph{
+    padding: 1rem;
+    background-color: #fff;
+    width: 70%;
+    box-shadow: 0 15px 30px rgb(218, 218, 218);
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.donut_chart{
+    padding: 1rem;
+    background-color: #fff;
+    width: 25%;
+    box-shadow: 0 15px 30px rgb(218, 218, 218);
+    border-radius: 10px;
+    margin-top: 1rem;
+}
