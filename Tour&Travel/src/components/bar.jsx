@@ -46,7 +46,7 @@ class Bar extends React.Component {
           options={this.state.options}
           series={this.state.series}
           type="bar"
-          width="900"
+          width="1090"
           height="300"
         />
       </div>
