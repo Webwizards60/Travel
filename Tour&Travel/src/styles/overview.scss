@@ -39,9 +39,13 @@
       width: 80%;
       border: none;
       background-color: #fff;
-      border: 0.5px solid rgb(196, 196, 196);
+      border: 0.5px solid #bdccff;
       border-radius: 5px;
-      box-shadow: 0 5px 10px rgba(206, 206, 206, 0.5);
+      box-shadow: 0 4px 8px #9db2ff6c;
+
+      &:focus{
+        outline: 0.5px solid #9db2ff;
+      }
     }
   }
 }
@@ -58,9 +62,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(135deg, rgb(200, 233, 255), rgb(141, 203, 255));
+  background-color: #BFCDFF;
   font-family: $main-font;
-  box-shadow: 0 25px 50px rgb(190, 190, 190);
 
   & .name {
     margin-top: 1rem;
@@ -90,7 +93,7 @@
 }
 
 .submitBtn {
-  background-color: #0f36bf;
+  background-color: #6281EF;
   color: #fff;
   width: 15%;
   display: flex;

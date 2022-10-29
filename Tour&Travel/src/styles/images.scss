@@ -8,12 +8,12 @@
 
 .inputSearch {
   border: none;
-  box-shadow: 0 15px 30px #999;
   font-size: $font-small;
   height: 25px;
   width: 450px;
   border-radius: 15px;
   padding: 0.5rem;
+  border: 2px solid #6281EF;
 
   &:focus {
     outline: none;
@@ -29,12 +29,12 @@
   & .button1 {
     font-family: $main-font;
     padding: 0.75rem 1rem;
-    background-color: #0aa1dd;
+    background-color: #6281EF;
     margin-right: 3rem;
     color: #fff;
     font-weight: 600;
     border-radius: 10px;
-    box-shadow: 0 10px 20px #0aa1dd7e;
+    box-shadow: 0 10px 20px #6281efa6;
   }
 }
 
@@ -42,7 +42,7 @@
 .search{
     & i{
         margin-left: 1rem;
-        background-color: #0aa1dd;
+        background-color: #6281EF;
         padding: .5rem;
         border-radius: 50%;
         color: #fff;

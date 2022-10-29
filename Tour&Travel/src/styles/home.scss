@@ -8,10 +8,10 @@
 }
 
 .dropdown {
-  background-color: #0aa1dd;
+  background-color: #6281EF;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
-  box-shadow: 0 10px 20px #0aa1dd5e;
+  box-shadow: 0 10px 20px #6281efa6;
   cursor: pointer;
 
   & .drop {
@@ -27,13 +27,13 @@
   margin-top: 1rem;
   display: flex;
   justify-content: center;
-  width: calc(100vw - 30vw);
+  align-items: center;
 }
 
 .donut_chart {
   padding: 1rem;
   background-color: #fff;
-  width: 25%;
+  width: 35%;
   box-shadow: 0 15px 30px rgb(218, 218, 218);
   border-radius: 10px;
 }
@@ -41,21 +41,21 @@
 .mostVisitingPlace {
   height: 225px;
   width: 400px;
-  background-color: #bbcbff;
+  background-color: #BBCBFF;
   padding: 1rem;
   border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow-y: scroll;
   box-shadow: 0 10px 20px rgb(224, 224, 224);
-
-  & .line{
-    font-size: 25px;
-    color: #575757
-  }
 }
 
 .userPlaces {
   display: flex;
   gap: 3rem;
   align-items: center;
+  justify-content: space-evenly;
   margin-top: 1rem;
 }
 
@@ -66,6 +66,7 @@
   justify-content: space-between;
   align-items: center;
   margin-top: .5rem;
+  border-radius: 10px;
 
   & .cardImg {
     height: 30px;
@@ -90,5 +91,18 @@
     & .arrowRight{
         font-size: 22px;
     }
+  }
+}
+
+.PlaceInfo{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  & .line{
+    font-size: 20px;
+    padding: 0.5rem;
+    font-family: $main-font;
+    color: #292929;
   }
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import Chart from "react-apexcharts";
+import "../styles/charts.scss";
 
 class Bar extends React.Component {
   constructor(props) {
@@ -8,7 +9,7 @@ class Bar extends React.Component {
     this.state = {
       options: {
         fill: {
-          colors: "#0AA1DD",
+          colors: "#6281EF",
         },
         chart: {
           id: "basic-bar",
@@ -41,13 +42,13 @@ class Bar extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className="chart">
         <Chart
           options={this.state.options}
           series={this.state.series}
           type="bar"
-          width="1090"
-          height="300"
+          width={"85%"}
+          height={"100%"}
         />
       </div>
     );

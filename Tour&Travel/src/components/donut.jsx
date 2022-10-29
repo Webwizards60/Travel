@@ -23,7 +23,7 @@ class Donut extends React.Component {
               text: "pie chart",
             },
             fill: {
-              colors: ["#0AA1DD", "#fff"],
+              colors: ["#6281EF", "#00FF73"],
             },
           }}
         />

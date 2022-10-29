@@ -5,12 +5,11 @@
   padding: 1rem;
   width: 15vw;
   left: 0;
-  background-color: rgb(255, 255, 255);
-  border-right: 1px solid rgb(201, 201, 201);
+  background-color: #FBFCFF;
+  border-right: 1px solid #D9E1FF;
   height: 100vh;
   position: fixed;
   border-radius: 20px;
-  box-shadow: 15px 0 30px rgba(224, 224, 224, 0.548);
   z-index: 10;
 
   & .title {
@@ -30,20 +29,30 @@
       font-weight: 400;
       font-size: $font-small;
 
-      & li {
+      & .navItem {
         padding: 0.75rem;
         transition: 0.2s ease all;
-
-        & .navLink {
-          text-decoration: none;
-        }
+        text-decoration: none;
 
         &:hover {
-          background-color: rgb(255, 255, 255);
-          box-shadow: 0 15px 30px rgb(201, 201, 201);
+          box-shadow: 0 4px 8px rgb(214, 214, 214);
           border-radius: 15px;
         }
       }
+
+      & .active{
+          color: #fff;
+          background-color: rgb(41, 41, 41);
+          box-shadow: 0 4px 8px rgb(214, 214, 214);
+          padding: 0.75rem;
+          border-radius: 15px;
+          transition: 0.4s all ease;
+
+          & .navLink{
+            text-decoration: none;
+            color: #fff;
+          }
+        }
 
       & a {
         cursor: pointer;

@@ -1,42 +1,58 @@
 import React, { useState } from "react";
 import "../styles/sidebar.scss";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const sideNav = () => {
   const [button, setButton] = useState(false);
-    const buttonToggleHandler = () => {
-      setButton((p) => !p);
-    };
+  const buttonToggleHandler = () => {
+    setButton((p) => !p);
+  };
   return (
     <header className="sideBar">
       <span className="title">CG Tourism</span>
       <div className="nav-list">
         <ul className="nav">
-          <li className="navItem">
-            <Link className="navLink" to={"/"}>
+          <NavLink className="navItem" to={"/Home"} activeClassName="active">
+            <span className="navLink">
               <i class="uil uil-window-grid"></i> Dashboard
-            </Link>
-          </li>
-          <li className="navItem">
-            <a className="navLink">
+            </span>
+          </NavLink>
+          <NavLink
+            className="navItem"
+            to={"/Overview"}
+            activeClassName="active"
+          >
+            <span className="navLink">
               <i class="uil uil-database"></i> Data
-            </a>
-          </li>
-          <li className="navItem">
-            <Link className="navLink" to={"/add-places"}>
+            </span>
+          </NavLink>
+          <NavLink
+            className="navItem"
+            to={"/add-places"}
+            activeClassName="active"
+          >
+            <span className="navLink">
               <i class="uil uil-map-marker-shield"></i> Add Places
-            </Link>
-          </li>
-          <li className="navItem">
-            <Link className="navLink" to={"/add-images"}>
+            </span>
+          </NavLink>
+          <NavLink
+            className="navItem"
+            to={"/add-images"}
+            activeClassName="active"
+          >
+            <span className="navLink">
               <i class="uil uil-image"></i> Image Upload
-            </Link>
-          </li>
-          <li className="navItem">
-            <Link className="navLink" to={"/add-users"}>
+            </span>
+          </NavLink>
+          <NavLink
+            className="navItem"
+            to={"/add-users"}
+            activeClassName="active"
+          >
+            <span className="navLink">
               <i class="uil uil-user"></i> Users
-            </Link>
-          </li>
+            </span>
+          </NavLink>
         </ul>
       </div>
     </header>

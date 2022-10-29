@@ -15,8 +15,8 @@ const App = () => {
         <TopNav />
         <SideNav />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/home" element={<Overview />} />
+          <Route path="/Home" element={<Home />} />
+          <Route path="/Overview" element={<Overview />} />
           <Route path="/add-places" element={<Place />} />
           <Route path="/add-images" element={<Image />} />
           <Route path="/add-users" element={<Users />} />
