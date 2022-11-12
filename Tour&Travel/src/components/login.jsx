@@ -1,9 +1,12 @@
-import React from "react";
-import mainImage from "../images/image 1.png";
+import React, { useEffect } from "react";
+import { useState } from "react";
+import mainImage from "../assets/img/image1.jpg";
+import cgLogo from "../assets/img/logo.png";
 import "../styles/login.scss";
-import cgLogo from "../images/logo.png";
 
-const login = () => {
+const Login = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   return (
     <div className="login">
       <img src={mainImage} className="mainImage" />
@@ -19,20 +22,22 @@ const login = () => {
             type="email"
             placeholder="ENTER YOUR EMAIL"
             className="input"
+            onChange={(e) => setEmail(e.target.value)}
           />
           <span className="Info">Password</span>
           <input
             type="password"
             placeholder="ENTER YOUR PASSWORD"
             className="input"
+            onChange={(e) => setPassword(e.target.value)}
           />
         </div>
-        <div className="login_btn">
+        <button className="login_btn">
           <span>Login</span>
-        </div>
+        </button>
       </div>
     </div>
   );
 };
 
-export default login;
+export default Login;

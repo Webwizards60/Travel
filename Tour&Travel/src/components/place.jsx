@@ -1,8 +1,9 @@
-import React from 'react'
+import React from "react";
 import "../styles/add-image.scss";
-import Image from '../assets/img/image.jpg';
+import Image from "../assets/img/image.jpg";
 
 const image = () => {
+
   return (
     <div className="main">
       <div className="imageInfo">
@@ -55,9 +56,9 @@ const image = () => {
       </div>
 
       <div className="imageSec">
-        <img src={Image} className="image"/>
-        <img src={Image} className="image"/>
-        <img src={Image} className="image"/>
+        <img src={Image} className="image" />
+        <img src={Image} className="image" />
+        <img src={Image} className="image" />
         <div className="addImage">
           <i class="uil uil-plus"></i>
           <span>Add Image</span>
@@ -69,6 +70,6 @@ const image = () => {
       </div>
     </div>
   );
-}
+};
 
-export default image
+export default image;

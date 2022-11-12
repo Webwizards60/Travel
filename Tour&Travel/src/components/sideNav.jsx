@@ -12,7 +12,7 @@ const sideNav = () => {
       <span className="title">CG Tourism</span>
       <div className="nav-list">
         <ul className="nav">
-          <NavLink className="navItem" to={"/Home"} activeClassName="active">
+          <NavLink className="navItem" to={" "} activeclassname="active">
             <span className="navLink">
               <i class="uil uil-window-grid"></i> Dashboard
             </span>
@@ -20,7 +20,7 @@ const sideNav = () => {
           <NavLink
             className="navItem"
             to={"/Overview"}
-            activeClassName="active"
+            activeclassname="active"
           >
             <span className="navLink">
               <i class="uil uil-database"></i> Data
@@ -29,7 +29,7 @@ const sideNav = () => {
           <NavLink
             className="navItem"
             to={"/add-places"}
-            activeClassName="active"
+            activeclassname="active"
           >
             <span className="navLink">
               <i class="uil uil-map-marker-shield"></i> Add Places
@@ -38,7 +38,7 @@ const sideNav = () => {
           <NavLink
             className="navItem"
             to={"/add-images"}
-            activeClassName="active"
+            activeclassname="active"
           >
             <span className="navLink">
               <i class="uil uil-image"></i> Image Upload
@@ -47,7 +47,7 @@ const sideNav = () => {
           <NavLink
             className="navItem"
             to={"/add-users"}
-            activeClassName="active"
+            activeclassname="active"
           >
             <span className="navLink">
               <i class="uil uil-user"></i> Users

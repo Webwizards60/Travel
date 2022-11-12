@@ -3,10 +3,11 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Overview from "./components/overview";
 import TopNav from "./components/topNav";
 import SideNav from "./components/sideNav";
-import Home from './components/home'
-import Place from './components/place';
+import Home from "./components/home";
+import Place from "./components/place";
 import Image from "./components/images";
-import Users from './components/users'
+import Users from "./components/users";
+import Login from "./components/login";
 
 const App = () => {
   return (
@@ -15,12 +16,13 @@ const App = () => {
         <TopNav />
         <SideNav />
         <Routes>
-          <Route path="/Home" element={<Home />} />
+          <Route path=" " element={<Home />} />
           <Route path="/Overview" element={<Overview />} />
           <Route path="/add-places" element={<Place />} />
           <Route path="/add-images" element={<Image />} />
           <Route path="/add-users" element={<Users />} />
         </Routes>
+        {/* <Login /> */}
       </Router>
     </>
   );

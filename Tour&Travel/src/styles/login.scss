@@ -78,9 +78,11 @@
 }
 
 .login_btn {
+  border: none;
   width: 85%;
   height: 40px;
   background-color: $main-color;
+  outline: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,6 +91,7 @@
   border-radius: 5px;
   box-shadow: 0 10px 20px rgba($main-color, 0.5);
   transition: 0.4s;
+  cursor: pointer;
 
   & span {
     font-family: $main-font;
