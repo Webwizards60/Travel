@@ -1,17 +1,18 @@
 import axios from "axios";
 import { placeActions } from "./store/placeSlice";
+import Cookies from 'js-cookie'
+import { userActions } from "./store/userSlice";
 
+axios.defaults.withCredentials = true
 const API = axios.create({
-  // baseURL: "https://sih11.herokuapp.com/",
-  baseURL: "https://tourism-platform-backend.herokuapp.com/",
+  baseURL : "http://localhost:8000/",
+  // baseURL: "https://tourism-platform.vercel.app/",
 });
 
 API.interceptors.request.use((req) => {
-  // if (Cookies.get('')) {
-  //   req.headers[''] = `${Cookies.get('')}`;
-  // }
-  req.headers["x-access-token"] =
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvYmpfaWQiOiI2MzI4OGFjOWUwZDBmMjIzYTQyYmRiNmEiLCJlbWFpbCI6InRhbnVAZ21haWwuY29tIiwicm9sZSI6InN1cGVyYWRtaW4iLCJpYXQiOjE2Njc3MTY5NDksImV4cCI6MTY2NzcyNDE0OX0.Jk0uIO0awGNMc6F9BjXP7myA_LlIU8slQpO9yIhhXWY";
+  if (Cookies.get('x-access-token')) {
+    req.headers['x-access-token'] = `${Cookies.get('x-access-token')}`;
+  }
   return req;
 });
 
@@ -25,3 +26,15 @@ export const fetchPlaceList = () => {
     }
   };
 };
+
+export const loginRequest = (data,navigate) =>{
+  return async (dispatch) => {
+    try {
+      const res = await API.post("/superadmin/login",data);
+      dispatch(userActions.setAuth(true))
+      navigate("/")
+    } catch (err) {
+      console.log(err);
+    }
+  };
+}
